@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>howdy hey</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</body>
+<body>
+    <div class="w3-container" style="margin-left: 10%; margin-right: 10%; margin-top: 15%; margin-bottom: 5%">
+        <p class="w3-jumbo" style="text-align:left "> Let's talk about </h2> <span id="stuff-to-talk-about">stuff</span> </p>
+    </div>
+
+<script>
+    var activities = setInterval(stuff, 300);
+
+    function stuff() {
+      var list = ["C++", "HTML", "Bob Dylan", "life", "music", "films", "football", "swimming", "politics", "Donald Trump", "cultures", "chemistry", "careers"]
+      document.getElementById("stuff-to-talk-about").innerHTML = list[Math.floor((Math.random() * (list.length - 1)) + 1)];
+    }
+</script>
+
+</body>
+</html>
