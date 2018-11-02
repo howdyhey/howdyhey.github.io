@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
 </headzn>
 <body>
-    <div id="colordiv" style="height: 1rem; width: 100%"></div>
     <p style="margin: 0.5rem; font-size: 1.5rem; background: -webkit-linear-gradient(#FF416C, #FF4B2B); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Howdy Hey<br> </p>
     <div class="w3-container" style="margin-left: 5%; margin-right: 5%;">
         <div class="w3-half">
@@ -23,8 +22,7 @@
 
 <script>
 
-    var backgrounds = ["linear-gradient(to right, #00f260, #0575e6)", "linear-gradient(to right, #f12711, #f5af19)", "linear-gradient(to right, #009FFF, #ec2F4B)", "linear-gradient(to right, #FF416C, #FF4B2B)", "linear-gradient(to right, #FDC830, #F37335)"];
-    document.getElementById("colordiv").style.background = backgrounds[Math.floor((Math.random() * (backgrounds.length - 1)) + 1)];
+    //var backgrounds = ["linear-gradient(to right, #00f260, #0575e6)", "linear-gradient(to right, #f12711, #f5af19)", "linear-gradient(to right, #009FFF, #ec2F4B)", "linear-gradient(to right, #FF416C, #FF4B2B)", "linear-gradient(to right, #FDC830, #F37335)"];
 
     var activities = setInterval(stuff, 350);
     function stuff() {
