@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>howdy hey</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+</head>
+<body>
+    <div id="colordiv" style="height: 1rem; width: 100%"></div>
+    <div class="w3-container">
+        <a href='index.html' class="w3-button w3-xlarge w3-round-xlarge w3-border w3-margin-top" style="text-align:left;"> < back</a>
+    </div>
+    <div class="w3-container" style="margin-left: 5%; margin-right: 5%; margin-top: 10%">
+        <div class="w3-half">
+            <h2> What is it? </h2>
+        </div>
+        <div class="w3-half">
+            <p>     It started one day I sat with someone in the bus. I didn't know him and he didn't know me, yet we started randomly talking  and turns out we were going to the same lecture. After the lecture we went to get a coffee for an hour and had a chat, we found even though we were completely different people (different subjects, nationalities, friendship groups...) we got along really nicely because we shared similar mindsets on some things. <br><br>That 1 hour we talked was completely organic, no friends-in-common made us meet, we weren't forced to sit together - it was just a random yes which lead to a genuinely interesting conversation. <br><br>After that I talked to some close friends in other universities about it and they mentioned how they too had been struggling to make friends in university, they had people they sat with in lectures, acquaintances, people that were in the same accommodation. However they had no-one to sit down with and talk about life, music, sports, love, the near future or anything that made you consider who you were as a person and gave you a perspective on life. <br><br>With this little story in mind I decided to make Howdy, a platform where people from the same university/college can just (without signing up) meet at some coffee shop, just because they were both free at the same time. <br><br>English isn't my native language, so I was introduced to the word "howdy" by some friends (the same ones I talked to about my 1 hour talk) as this nice, warm, welcoming thing friends say to each other. Later on I was critiqued for saying howdy to people that weren't close friends. It is that very principle of howdy being seen as a 'friendly, welcoming' word that gives this platform its name.
+        </div>
+        <div class="w3-half">
+            <h2> Inspirations </h2>
+        </div>
+        <div class="w3-half">
+            <p> "Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes... the ones who see things differently -- they're not fond of rules... You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them because they change things... they push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do. " <br><br> <i>-Steve Jobs</i></p>
+        </div>
+    </div>
+
+<script>
+    var backgrounds = ["linear-gradient(to right, #00f260, #0575e6)", "linear-gradient(to right, #f12711, #f5af19)", "linear-gradient(to right, #009FFF, #ec2F4B)", "linear-gradient(to right, #FF416C, #FF4B2B)", "linear-gradient(to right, #FDC830, #F37335)"];
+    document.getElementById("colordiv").style.background = backgrounds[Math.floor((Math.random() * (backgrounds.length - 1)) + 1)];
+
+    var activities = setInterval(stuff, 350);
+    function stuff() {
+      var list = ["C++", "HTML", "jazz", "life", "music", "films", "football", "swimming", "politics", "Trump", "cultures", "chemistry", "careers", "planes", "cars", "alcohol", "books", "religion", "zen", "money", "happiness", "running", "sport"]
+      document.getElementById("stuff-to-talk-about").innerHTML = list[Math.floor((Math.random() * (list.length - 1)) + 1)];
+    }
+</script>
+
+</body>
+</html>
